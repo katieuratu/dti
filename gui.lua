@@ -2208,7 +2208,7 @@ local script = G2L["7"];
 	end
 	
 	local function scale(thing)
-		game.TweenService:Create(thing, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Size = UDim2.fromScale(0.4, 0.4)}):Play()
+		game.TweenService:Create(thing, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Size = UDim2.fromScale(0.3, 0.3)}):Play()
 	end
 	
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3063,8 +3063,8 @@ task.spawn(C_e2);
 local function C_ee()
 	local script = G2L["ee"];
 	local function scale(thing)
-		script.Parent.Size = UDim2.fromScale(0.4, 0.4)
-		game.TweenService:Create(thing, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Size = UDim2.fromScale(0.334, 0.334)}):Play()
+		script.Parent.Size = UDim2.fromScale(0.3, 0.3)
+		game.TweenService:Create(thing, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Size = UDim2.fromScale(0.2, 0.2)}):Play()
 	end
 
 	scale(script.Parent)
