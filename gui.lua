@@ -22,8 +22,8 @@ G2L["2"]["Active"] = true;
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["2"]["Size"] = UDim2.new(0.2, 0, 0.2, 0);
-G2L["2"]["Position"] = UDim2.new(0.49032, 0, 0.5577, 0);
+G2L["2"]["Size"] = UDim2.new(0.46045, 0, 0.07996, 0);
+G2L["2"]["Position"] = UDim2.new(0.47907, 0, 0.15193, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Name"] = [[Frame2]];
 
@@ -1319,6 +1319,7 @@ G2L["8d"]["CornerRadius"] = UDim.new(0.2, 0);
 
 -- StarterGui.katie.Frame2.Main.Frame2.Main
 G2L["8e"] = Instance.new("ScrollingFrame", G2L["e"]);
+G2L["8e"]["Visible"] = false;
 G2L["8e"]["Active"] = true;
 G2L["8e"]["BorderSizePixel"] = 0;
 G2L["8e"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
@@ -1711,7 +1712,6 @@ G2L["b9"]["CornerRadius"] = UDim.new(0.2, 0);
 
 -- StarterGui.katie.Frame2.Main.Frame2.Accessories
 G2L["ba"] = Instance.new("ScrollingFrame", G2L["e"]);
-G2L["ba"]["Visible"] = false;
 G2L["ba"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
 G2L["ba"]["BorderSizePixel"] = 0;
 G2L["ba"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
@@ -2194,9 +2194,9 @@ G2L["ee"] = Instance.new("UIAspectRatioConstraint", G2L["ed"]);
 
 -- StarterGui.katie.Frame2.Sound
 G2L["ef"] = Instance.new("Sound", G2L["2"]);
-G2L["ef"]["Volume"] = 0.25;
+G2L["ef"]["Volume"] = 1;
 G2L["ef"]["RollOffMode"] = Enum.RollOffMode.InverseTapered;
-G2L["ef"]["SoundId"] = [[rbxassetid://140594906158320]];
+G2L["ef"]["SoundId"] = [[rbxassetid://421058925]];
 
 
 -- StarterGui.katie.Frame2.GuiHandler
@@ -2926,120 +2926,122 @@ task.spawn(C_c3);
 -- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_DressVeil.WearScript
 local function C_cb()
 	local script = G2L["cb"];
-	local args5 = {
-		[1] = "Winter: - Winter Wind Hair",
-		[2] = "Position",
-		[3] = "Y",
-		[4] = -3.3,
-		[5] = 1
-	}
+	script.Parent.MouseButton1Down:Connect(function()
+		local args5 = {
+			[1] = "Winter: - Winter Wind Hair",
+			[2] = "Position",
+			[3] = "Y",
+			[4] = -3.3,
+			[5] = 1
+		}
 
-	local args55 = {
-		[1] = "Winter: - Winter Wind Hair",
-		[2] = "Position",
-		[3] = "Z",
-		[4] = 0.1,
-		[5] = 1
-	}
+		local args55 = {
+			[1] = "Winter: - Winter Wind Hair",
+			[2] = "Position",
+			[3] = "Z",
+			[4] = 0.1,
+			[5] = 1
+		}
 
-	local args555 = {
-		[1] = "Winter: - Winter Wind Hair",
-		[2] = "Scale",
-		[3] = "Scale",
-		[4] = 2.5,
-		[5] = 1
-	}
+		local args555 = {
+			[1] = "Winter: - Winter Wind Hair",
+			[2] = "Scale",
+			[3] = "Scale",
+			[4] = 2.5,
+			[5] = 1
+		}
 
-	local args2 = {
-		[1] = "Bridal Veil",
-		[2] = "Position",
-		[3] = "Y",
-		[4] = -1.25,
-		[5] = 1
-	}
+		local args2 = {
+			[1] = "Bridal Veil",
+			[2] = "Position",
+			[3] = "Y",
+			[4] = -1.25,
+			[5] = 1
+		}
 
-	local args199 = {
-		[1] = "Bridal Veil",
-		[2] = "Position",
-		[3] = "Z",
-		[4] = -1.1,
-	}
+		local args199 = {
+			[1] = "Bridal Veil",
+			[2] = "Position",
+			[3] = "Z",
+			[4] = -1.1,
+		}
 
-	local args22 = {
-		[1] = "Bridal Veil",
-		[2] = "Scale",
-		[3] = "Scale",
-		[4] = 1,
-		[5] = 1
-	}
+		local args22 = {
+			[1] = "Bridal Veil",
+			[2] = "Scale",
+			[3] = "Scale",
+			[4] = 1,
+			[5] = 1
+		}
 
-	local args222 = {
-		[1] = "Bridal Veil",
-		[2] = "Rotation",
-		[3] = "X",
-		[4] = -25,
-		[5] = 1
-	}
+		local args222 = {
+			[1] = "Bridal Veil",
+			[2] = "Rotation",
+			[3] = "X",
+			[4] = -25,
+			[5] = 1
+		}
 
-	local args6 = {
-		[1] = "Equip",
-		[2] = "Winter: Petal Dress (3 hour code)"
-	}
+		local args6 = {
+			[1] = "Equip",
+			[2] = "Winter: Petal Dress (3 hour code)"
+		}
 
-	local args66 = {
-		[1] = "Color Accessory",
-		[2] = "Winter: Petal Dress (3 hour code)",
-		[3] = "2",
-		[4] = Color3.fromRGB(159, 159, 159)
-	}
+		local args66 = {
+			[1] = "Color Accessory",
+			[2] = "Winter: Petal Dress (3 hour code)",
+			[3] = "2",
+			[4] = Color3.fromRGB(159, 159, 159)
+		}
 
-	local args666 = {
-		[1] = "Color Accessory",
-		[2] = "Winter: Petal Dress (3 hour code)",
-		[3] = "3",
-		[4] = Color3.fromRGB(255, 255, 255)
-	}
+		local args666 = {
+			[1] = "Color Accessory",
+			[2] = "Winter: Petal Dress (3 hour code)",
+			[3] = "3",
+			[4] = Color3.fromRGB(255, 255, 255)
+		}
 
-	local args9 = {
-		[1] = "Color Accessory",
-		[2] = "Winter: Petal Dress (3 hour code)",
-		[3] = "1",
-		[4] = Color3.fromRGB(190, 190, 190)
-	}
+		local args9 = {
+			[1] = "Color Accessory",
+			[2] = "Winter: Petal Dress (3 hour code)",
+			[3] = "1",
+			[4] = Color3.fromRGB(190, 190, 190)
+		}
 
-	local args99 = {
-		[1] = "Winter: Petal Dress (3 hour code)",
-		[2] = 2,
-		[3] = {
-			["Particles"] = "Off",
-			["Silver_Top"] = "Off"
-		},
-		[6] = {}
-	}
+		local args99 = {
+			[1] = "Winter: Petal Dress (3 hour code)",
+			[2] = 2,
+			[3] = {
+				["Particles"] = "Off",
+				["Silver_Top"] = "Off"
+			},
+			[6] = {}
+		}
 
-	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Lana Rae's Shorts")
-	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Lana Rae's Shorts", "1", Color3.new(1.000, 1.000, 1.000))
-	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer("Lana Rae's Shorts", 1)
-	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Winter: Petal Dress (3 hour code)")
-	game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args6))
-	game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args66))
-	game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args666))
-	game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args9))
-	game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").Toggle:FireServer(unpack(args99))
-	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Winter: - Winter Wind Hair")
-	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Winter: - Winter Wind Hair", "1", Color3.new(1.000, 1.000, 1.000))
-	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Winter: - Winter Wind Hair", "2", Color3.new(1.000, 1.000, 1.000))
-	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer("Winter: - Winter Wind Hair", 4)
-	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Bridal Veil")
-	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Bridal Veil", "1", Color3.new(0.745, 0.745, 0.745))
-	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Bridal Veil", "2", Color3.new(0.824, 0.824, 0.824))
-	game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args5))
-	game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args55))
-	game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args555))
-	game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args2))
-	game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args22))
-	game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args222))
-	game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args199))
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Lana Rae's Shorts")
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Lana Rae's Shorts", "1", Color3.new(1.000, 1.000, 1.000))
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer("Lana Rae's Shorts", 1)
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Winter: Petal Dress (3 hour code)")
+		game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args6))
+		game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args66))
+		game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args666))
+		game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args9))
+		game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").Toggle:FireServer(unpack(args99))
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Winter: - Winter Wind Hair")
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Winter: - Winter Wind Hair", "1", Color3.new(1.000, 1.000, 1.000))
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Winter: - Winter Wind Hair", "2", Color3.new(1.000, 1.000, 1.000))
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer("Winter: - Winter Wind Hair", 4)
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Bridal Veil")
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Bridal Veil", "1", Color3.new(0.745, 0.745, 0.745))
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Bridal Veil", "2", Color3.new(0.824, 0.824, 0.824))
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args5))
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args55))
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args555))
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args2))
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args22))
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args222))
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args199))
+	end)
 end;
 task.spawn(C_cb);
 -- StarterGui.katie.Frame2.Main.1.LocalScript
