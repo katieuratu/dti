@@ -2820,59 +2820,60 @@ local function C_c3()
 			[3] = "Scale",
 			[4] = 2.5,
 			[5] = 1
+		}
 
-			local args6 = {
-				[1] = "Equip",
-				[2] = "Winter: Petal Dress (3 hour code)"
-			}
+		local args6 = {
+			[1] = "Equip",
+			[2] = "Winter: Petal Dress (3 hour code)"
+		}
 
-			local args66 = {
-				[1] = "Color Accessory",
-				[2] = "Winter: Petal Dress (3 hour code)",
-				[3] = "2",
-				[4] = Color3.fromRGB(159, 159, 159)
-			}
+		local args66 = {
+			[1] = "Color Accessory",
+			[2] = "Winter: Petal Dress (3 hour code)",
+			[3] = "2",
+			[4] = Color3.fromRGB(159, 159, 159)
+		}
 
-			local args666 = {
-				[1] = "Color Accessory",
-				[2] = "Winter: Petal Dress (3 hour code)",
-				[3] = "3",
-				[4] = Color3.fromRGB(255, 255, 255)
-			}
+		local args666 = {
+			[1] = "Color Accessory",
+			[2] = "Winter: Petal Dress (3 hour code)",
+			[3] = "3",
+			[4] = Color3.fromRGB(255, 255, 255)
+		}
 
-			local args9 = {
-				[1] = "Color Accessory",
-				[2] = "Winter: Petal Dress (3 hour code)",
-				[3] = "1",
-				[4] = Color3.fromRGB(190, 190, 190)
-			}
+		local args9 = {
+			[1] = "Color Accessory",
+			[2] = "Winter: Petal Dress (3 hour code)",
+			[3] = "1",
+			[4] = Color3.fromRGB(190, 190, 190)
+		}
 
-			local args99 = {
-				[1] = "Winter: Petal Dress (3 hour code)",
-				[2] = 2,
-				[3] = {
-					["Particles"] = "Off",
-					["Silver_Top"] = "Off"
-				},
-				[6] = {}
-			}
+		local args99 = {
+			[1] = "Winter: Petal Dress (3 hour code)",
+			[2] = 2,
+			[3] = {
+				["Particles"] = "Off",
+				["Silver_Top"] = "Off"
+			},
+			[6] = {}
+		}
 
-			game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Lana Rae's Shorts")
-			game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Lana Rae's Shorts", "1", Color3.new(1.000, 1.000, 1.000))
-			game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer("Lana Rae's Shorts", 1)
-			game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Winter: Petal Dress (3 hour code)")
-			game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args6))
-			game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args66))
-			game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args666))
-			game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args9))
-			game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").Toggle:FireServer(unpack(args99))
-			game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Winter: - Winter Wind Hair")
-			game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Winter: - Winter Wind Hair", "1", Color3.new(1.000, 1.000, 1.000))
-			game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Winter: - Winter Wind Hair", "2", Color3.new(1.000, 1.000, 1.000))
-			game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer("Winter: - Winter Wind Hair", 4)
-			game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args5))
-			game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args55))
-			game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args555))
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Lana Rae's Shorts")
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Lana Rae's Shorts", "1", Color3.new(1.000, 1.000, 1.000))
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer("Lana Rae's Shorts", 1)
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Winter: Petal Dress (3 hour code)")
+		game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args6))
+		game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args66))
+		game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args666))
+		game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args9))
+		game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").Toggle:FireServer(unpack(args99))
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Winter: - Winter Wind Hair")
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Winter: - Winter Wind Hair", "1", Color3.new(1.000, 1.000, 1.000))
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Winter: - Winter Wind Hair", "2", Color3.new(1.000, 1.000, 1.000))
+		game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer("Winter: - Winter Wind Hair", 4)
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args5))
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args55))
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args555))
 	end)
 end;
 task.spawn(C_c3);
