@@ -1,4 +1,13 @@
--- Instances: 225 | Scripts: 29 | Modules: 0 | Tags: 0
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 239 | Scripts: 30 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.katie
@@ -13,7 +22,7 @@ G2L["2"]["Active"] = true;
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["2"]["Size"] = UDim2.new(0.33404, 0, 0.058, 0);
+G2L["2"]["Size"] = UDim2.new(0.334, 0, 0.334, 0);
 G2L["2"]["Position"] = UDim2.new(0.49032, 0, 0.5577, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Name"] = [[Frame2]];
@@ -132,10 +141,10 @@ G2L["f"]["CornerRadius"] = UDim.new(0.03, 0);
 
 -- StarterGui.katie.Frame2.Main.Frame2.Hairstyles
 G2L["10"] = Instance.new("ScrollingFrame", G2L["e"]);
+G2L["10"]["Visible"] = false;
 G2L["10"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
 G2L["10"]["BorderSizePixel"] = 0;
 G2L["10"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["10"]["CanvasPosition"] = Vector2.new(0, 700);
 G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["10"]["Name"] = [[Hairstyles]];
 G2L["10"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
@@ -1263,111 +1272,130 @@ G2L["89"] = Instance.new("LocalScript", G2L["82"]);
 G2L["89"]["Name"] = [[WearScript]];
 
 
--- StarterGui.katie.Frame2.Main.Frame2.Main
-G2L["8a"] = Instance.new("ScrollingFrame", G2L["e"]);
-G2L["8a"]["Visible"] = false;
-G2L["8a"]["Active"] = true;
+-- StarterGui.katie.Frame2.Main.Frame2.Hairstyles.Base_Label
+G2L["8a"] = Instance.new("TextLabel", G2L["10"]);
+G2L["8a"]["TextWrapped"] = true;
 G2L["8a"]["BorderSizePixel"] = 0;
-G2L["8a"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
+G2L["8a"]["TextSize"] = 14;
+G2L["8a"]["TextScaled"] = true;
 G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8a"]["Name"] = [[Main]];
-G2L["8a"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["8a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["8a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8a"]["BackgroundTransparency"] = 0.5;
+G2L["8a"]["Size"] = UDim2.new(0.95, 0, 0.17473, 0);
 G2L["8a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8a"]["ScrollBarThickness"] = 6;
-G2L["8a"]["BackgroundTransparency"] = 1;
+G2L["8a"]["Text"] = [[hair bases]];
+G2L["8a"]["Name"] = [[Base_Label]];
+G2L["8a"]["Position"] = UDim2.new(0.025, 0, 0.025, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Hairstyles.Base_Label.UICorner
+G2L["8b"] = Instance.new("UICorner", G2L["8a"]);
+G2L["8b"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Hairstyles.Substyle_Label
+G2L["8c"] = Instance.new("TextLabel", G2L["10"]);
+G2L["8c"]["TextWrapped"] = true;
+G2L["8c"]["BorderSizePixel"] = 0;
+G2L["8c"]["TextSize"] = 14;
+G2L["8c"]["TextScaled"] = true;
+G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8c"]["BackgroundTransparency"] = 0.5;
+G2L["8c"]["Size"] = UDim2.new(0.95, 0, 0.17473, 0);
+G2L["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8c"]["Text"] = [[styles]];
+G2L["8c"]["LayoutOrder"] = 2;
+G2L["8c"]["Name"] = [[Substyle_Label]];
+G2L["8c"]["Position"] = UDim2.new(0.025, 0, 0.025, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Hairstyles.Substyle_Label.UICorner
+G2L["8d"] = Instance.new("UICorner", G2L["8c"]);
+G2L["8d"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Main
+G2L["8e"] = Instance.new("ScrollingFrame", G2L["e"]);
+G2L["8e"]["Visible"] = false;
+G2L["8e"]["Active"] = true;
+G2L["8e"]["BorderSizePixel"] = 0;
+G2L["8e"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
+G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8e"]["Name"] = [[Main]];
+G2L["8e"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["8e"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8e"]["ScrollBarThickness"] = 6;
+G2L["8e"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Main.UIListLayout
-G2L["8b"] = Instance.new("UIListLayout", G2L["8a"]);
-G2L["8b"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["8b"]["Padding"] = UDim.new(0.025, 0);
-G2L["8b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["8f"] = Instance.new("UIListLayout", G2L["8e"]);
+G2L["8f"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["8f"]["Padding"] = UDim.new(0.025, 0);
+G2L["8f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Main.!
-G2L["8c"] = Instance.new("Frame", G2L["8a"]);
-G2L["8c"]["BorderSizePixel"] = 0;
-G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8c"]["Name"] = [[!]];
-G2L["8c"]["LayoutOrder"] = -11;
-G2L["8c"]["BackgroundTransparency"] = 1;
+G2L["90"] = Instance.new("Frame", G2L["8e"]);
+G2L["90"]["BorderSizePixel"] = 0;
+G2L["90"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["90"]["Name"] = [[!]];
+G2L["90"]["LayoutOrder"] = -11;
+G2L["90"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.katie.Frame2.Main.Frame2.Main.TextLabel
-G2L["8d"] = Instance.new("TextLabel", G2L["8a"]);
-G2L["8d"]["TextWrapped"] = true;
-G2L["8d"]["BorderSizePixel"] = 0;
-G2L["8d"]["TextSize"] = 14;
-G2L["8d"]["TextScaled"] = true;
-G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8d"]["BackgroundTransparency"] = 0.75;
-G2L["8d"]["Size"] = UDim2.new(0.95, 0, 0.15, 0);
-G2L["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8d"]["Text"] = [[idk... i'll probably add something here soon]];
+-- StarterGui.katie.Frame2.Main.Frame2.Main.Message2
+G2L["91"] = Instance.new("TextLabel", G2L["8e"]);
+G2L["91"]["TextWrapped"] = true;
+G2L["91"]["BorderSizePixel"] = 0;
+G2L["91"]["TextSize"] = 14;
+G2L["91"]["TextScaled"] = true;
+G2L["91"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["91"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["91"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["91"]["BackgroundTransparency"] = 0.75;
+G2L["91"]["Size"] = UDim2.new(0.95, 0, 0.17473, 0);
+G2L["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["91"]["Text"] = [[no features here yet lol]];
+G2L["91"]["LayoutOrder"] = 1;
+G2L["91"]["Name"] = [[Message2]];
+G2L["91"]["Position"] = UDim2.new(0.025, 0, 0.025, 0);
 
 
--- StarterGui.katie.Frame2.Main.Frame2.Main.TextLabel.UICorner
-G2L["8e"] = Instance.new("UICorner", G2L["8d"]);
-G2L["8e"]["CornerRadius"] = UDim.new(0.2, 0);
+-- StarterGui.katie.Frame2.Main.Frame2.Main.Message2.UICorner
+G2L["92"] = Instance.new("UICorner", G2L["91"]);
+G2L["92"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts
-G2L["8f"] = Instance.new("Frame", G2L["8a"]);
-G2L["8f"]["BorderSizePixel"] = 0;
-G2L["8f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8f"]["Size"] = UDim2.new(0.9423, 0, 0.28, 0);
-G2L["8f"]["Position"] = UDim2.new(0.02885, 0, 0.2, 0);
-G2L["8f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8f"]["Name"] = [[Hearts]];
-G2L["8f"]["LayoutOrder"] = 90;
-G2L["8f"]["BackgroundTransparency"] = 1;
+G2L["93"] = Instance.new("Frame", G2L["8e"]);
+G2L["93"]["BorderSizePixel"] = 0;
+G2L["93"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["93"]["Size"] = UDim2.new(0.9423, 0, 0.28, 0);
+G2L["93"]["Position"] = UDim2.new(0.02885, 0, 0.2, 0);
+G2L["93"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["93"]["Name"] = [[Hearts]];
+G2L["93"]["LayoutOrder"] = 90;
+G2L["93"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.UIListLayout
-G2L["90"] = Instance.new("UIListLayout", G2L["8f"]);
-G2L["90"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["90"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
-G2L["90"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
-G2L["90"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["90"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
-G2L["90"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["94"] = Instance.new("UIListLayout", G2L["93"]);
+G2L["94"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["94"]["HorizontalFlex"] = Enum.UIFlexAlignment.Fill;
+G2L["94"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["94"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["94"]["ItemLineAlignment"] = Enum.ItemLineAlignment.Center;
+G2L["94"]["FillDirection"] = Enum.FillDirection.Horizontal;
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart
-G2L["91"] = Instance.new("ImageButton", G2L["8f"]);
-G2L["91"]["BorderSizePixel"] = 0;
-G2L["91"]["BackgroundTransparency"] = 1;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["91"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["91"]["ImageColor3"] = Color3.fromRGB(255, 189, 195);
-G2L["91"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["91"]["Image"] = [[rbxassetid://115970245321538]];
-G2L["91"]["Size"] = UDim2.new(0.205, 0, 1, 0);
-G2L["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["91"]["Name"] = [[Heart]];
-
-
--- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart.UIAspectRatioConstraint
-G2L["92"] = Instance.new("UIAspectRatioConstraint", G2L["91"]);
-G2L["92"]["AspectRatio"] = 1.02102;
-
-
--- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart.UIScale
-G2L["93"] = Instance.new("UIScale", G2L["91"]);
-
-
-
--- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart.LocalScript
-G2L["94"] = Instance.new("LocalScript", G2L["91"]);
-
-
-
--- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart
-G2L["95"] = Instance.new("ImageButton", G2L["8f"]);
+G2L["95"] = Instance.new("ImageButton", G2L["93"]);
 G2L["95"]["BorderSizePixel"] = 0;
 G2L["95"]["BackgroundTransparency"] = 1;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
@@ -1396,7 +1424,7 @@ G2L["98"] = Instance.new("LocalScript", G2L["95"]);
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart
-G2L["99"] = Instance.new("ImageButton", G2L["8f"]);
+G2L["99"] = Instance.new("ImageButton", G2L["93"]);
 G2L["99"]["BorderSizePixel"] = 0;
 G2L["99"]["BackgroundTransparency"] = 1;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
@@ -1425,7 +1453,7 @@ G2L["9c"] = Instance.new("LocalScript", G2L["99"]);
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart
-G2L["9d"] = Instance.new("ImageButton", G2L["8f"]);
+G2L["9d"] = Instance.new("ImageButton", G2L["93"]);
 G2L["9d"]["BorderSizePixel"] = 0;
 G2L["9d"]["BackgroundTransparency"] = 1;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
@@ -1454,7 +1482,7 @@ G2L["a0"] = Instance.new("LocalScript", G2L["9d"]);
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart
-G2L["a1"] = Instance.new("ImageButton", G2L["8f"]);
+G2L["a1"] = Instance.new("ImageButton", G2L["93"]);
 G2L["a1"]["BorderSizePixel"] = 0;
 G2L["a1"]["BackgroundTransparency"] = 1;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
@@ -1483,7 +1511,7 @@ G2L["a4"] = Instance.new("LocalScript", G2L["a1"]);
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart
-G2L["a5"] = Instance.new("ImageButton", G2L["8f"]);
+G2L["a5"] = Instance.new("ImageButton", G2L["93"]);
 G2L["a5"]["BorderSizePixel"] = 0;
 G2L["a5"]["BackgroundTransparency"] = 1;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
@@ -1511,522 +1539,648 @@ G2L["a8"] = Instance.new("LocalScript", G2L["a5"]);
 
 
 
--- StarterGui.katie.Frame2.Main.Frame2.Credits
-G2L["a9"] = Instance.new("ScrollingFrame", G2L["e"]);
-G2L["a9"]["Visible"] = false;
-G2L["a9"]["Active"] = true;
+-- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart
+G2L["a9"] = Instance.new("ImageButton", G2L["93"]);
 G2L["a9"]["BorderSizePixel"] = 0;
-G2L["a9"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["a9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a9"]["Name"] = [[Credits]];
-G2L["a9"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["a9"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a9"]["ScrollBarThickness"] = 6;
 G2L["a9"]["BackgroundTransparency"] = 1;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["a9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a9"]["ImageColor3"] = Color3.fromRGB(255, 189, 195);
+G2L["a9"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["a9"]["Image"] = [[rbxassetid://115970245321538]];
+G2L["a9"]["Size"] = UDim2.new(0.205, 0, 1, 0);
+G2L["a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a9"]["Name"] = [[Heart]];
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart.UIAspectRatioConstraint
+G2L["aa"] = Instance.new("UIAspectRatioConstraint", G2L["a9"]);
+G2L["aa"]["AspectRatio"] = 1.02102;
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart.UIScale
+G2L["ab"] = Instance.new("UIScale", G2L["a9"]);
+
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart.LocalScript
+G2L["ac"] = Instance.new("LocalScript", G2L["a9"]);
+
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Main.Welcome
+G2L["ad"] = Instance.new("TextLabel", G2L["8e"]);
+G2L["ad"]["TextWrapped"] = true;
+G2L["ad"]["BorderSizePixel"] = 0;
+G2L["ad"]["TextSize"] = 14;
+G2L["ad"]["TextScaled"] = true;
+G2L["ad"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ad"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["ad"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ad"]["BackgroundTransparency"] = 0.75;
+G2L["ad"]["Size"] = UDim2.new(0.95, 0, 0.17473, 0);
+G2L["ad"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ad"]["Text"] = [[hello, {user}!]];
+G2L["ad"]["Name"] = [[Welcome]];
+G2L["ad"]["Position"] = UDim2.new(0.025, 0, 0.025, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Main.Welcome.UICorner
+G2L["ae"] = Instance.new("UICorner", G2L["ad"]);
+G2L["ae"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Credits
+G2L["af"] = Instance.new("ScrollingFrame", G2L["e"]);
+G2L["af"]["Visible"] = false;
+G2L["af"]["Active"] = true;
+G2L["af"]["BorderSizePixel"] = 0;
+G2L["af"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
+G2L["af"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["af"]["Name"] = [[Credits]];
+G2L["af"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["af"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["af"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["af"]["ScrollBarThickness"] = 6;
+G2L["af"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Credits.UIListLayout
-G2L["aa"] = Instance.new("UIListLayout", G2L["a9"]);
-G2L["aa"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["aa"]["Padding"] = UDim.new(0.025, 0);
-G2L["aa"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["b0"] = Instance.new("UIListLayout", G2L["af"]);
+G2L["b0"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["b0"]["Padding"] = UDim.new(0.025, 0);
+G2L["b0"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Credits.!
-G2L["ab"] = Instance.new("Frame", G2L["a9"]);
-G2L["ab"]["BorderSizePixel"] = 0;
-G2L["ab"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ab"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ab"]["Name"] = [[!]];
-G2L["ab"]["LayoutOrder"] = -11;
-G2L["ab"]["BackgroundTransparency"] = 1;
+G2L["b1"] = Instance.new("Frame", G2L["af"]);
+G2L["b1"]["BorderSizePixel"] = 0;
+G2L["b1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b1"]["Name"] = [[!]];
+G2L["b1"]["LayoutOrder"] = -11;
+G2L["b1"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Credits.TextLabel
-G2L["ac"] = Instance.new("TextLabel", G2L["a9"]);
-G2L["ac"]["TextWrapped"] = true;
-G2L["ac"]["BorderSizePixel"] = 0;
-G2L["ac"]["TextSize"] = 14;
-G2L["ac"]["TextScaled"] = true;
-G2L["ac"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ac"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["ac"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ac"]["BackgroundTransparency"] = 0.75;
-G2L["ac"]["Size"] = UDim2.new(0.95, 0, 0.2, 0);
-G2L["ac"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ac"]["Text"] = [[me: design, scripting, hairs]];
-G2L["ac"]["Position"] = UDim2.new(0.025, 0, 0.025, 0);
+G2L["b2"] = Instance.new("TextLabel", G2L["af"]);
+G2L["b2"]["TextWrapped"] = true;
+G2L["b2"]["BorderSizePixel"] = 0;
+G2L["b2"]["TextSize"] = 14;
+G2L["b2"]["TextScaled"] = true;
+G2L["b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b2"]["BackgroundTransparency"] = 0.75;
+G2L["b2"]["Size"] = UDim2.new(0.95, 0, 0.2, 0);
+G2L["b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b2"]["Text"] = [[me: design, scripting, hairs]];
+G2L["b2"]["Position"] = UDim2.new(0.025, 0, 0.025, 0);
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Credits.TextLabel.UICorner
-G2L["ad"] = Instance.new("UICorner", G2L["ac"]);
-G2L["ad"]["CornerRadius"] = UDim.new(0.2, 0);
+G2L["b3"] = Instance.new("UICorner", G2L["b2"]);
+G2L["b3"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Credits.TextLabel
-G2L["ae"] = Instance.new("TextLabel", G2L["a9"]);
-G2L["ae"]["TextWrapped"] = true;
-G2L["ae"]["BorderSizePixel"] = 0;
-G2L["ae"]["TextSize"] = 14;
-G2L["ae"]["TextScaled"] = true;
-G2L["ae"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ae"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["ae"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ae"]["BackgroundTransparency"] = 0.75;
-G2L["ae"]["Size"] = UDim2.new(0.95, 0, 0.23199, 0);
-G2L["ae"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ae"]["Text"] = [[ryry: events, partial design]];
-G2L["ae"]["Position"] = UDim2.new(0.025, 0, 0.2, 0);
+G2L["b4"] = Instance.new("TextLabel", G2L["af"]);
+G2L["b4"]["TextWrapped"] = true;
+G2L["b4"]["BorderSizePixel"] = 0;
+G2L["b4"]["TextSize"] = 14;
+G2L["b4"]["TextScaled"] = true;
+G2L["b4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b4"]["BackgroundTransparency"] = 0.75;
+G2L["b4"]["Size"] = UDim2.new(0.95, 0, 0.23199, 0);
+G2L["b4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b4"]["Text"] = [[ryry: events, partial design]];
+G2L["b4"]["Position"] = UDim2.new(0.025, 0, 0.2, 0);
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Credits.TextLabel.UICorner
-G2L["af"] = Instance.new("UICorner", G2L["ae"]);
-G2L["af"]["CornerRadius"] = UDim.new(0.2, 0);
+G2L["b5"] = Instance.new("UICorner", G2L["b4"]);
+G2L["b5"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Credits.TextLabel
-G2L["b0"] = Instance.new("TextLabel", G2L["a9"]);
-G2L["b0"]["TextWrapped"] = true;
-G2L["b0"]["BorderSizePixel"] = 0;
-G2L["b0"]["TextSize"] = 14;
-G2L["b0"]["TextScaled"] = true;
-G2L["b0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["b0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b0"]["BackgroundTransparency"] = 0.75;
-G2L["b0"]["Size"] = UDim2.new(0.95, 0, 0.15, 0);
-G2L["b0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b0"]["Text"] = [[lila: the only accessory]];
+G2L["b6"] = Instance.new("TextLabel", G2L["af"]);
+G2L["b6"]["TextWrapped"] = true;
+G2L["b6"]["BorderSizePixel"] = 0;
+G2L["b6"]["TextSize"] = 14;
+G2L["b6"]["TextScaled"] = true;
+G2L["b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b6"]["BackgroundTransparency"] = 0.75;
+G2L["b6"]["Size"] = UDim2.new(0.95, 0, 0.15, 0);
+G2L["b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b6"]["Text"] = [[lila: the only accessory]];
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Credits.TextLabel.UICorner
-G2L["b1"] = Instance.new("UICorner", G2L["b0"]);
-G2L["b1"]["CornerRadius"] = UDim.new(0.2, 0);
+G2L["b7"] = Instance.new("UICorner", G2L["b6"]);
+G2L["b7"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Accessories
-G2L["b2"] = Instance.new("ScrollingFrame", G2L["e"]);
-G2L["b2"]["Visible"] = false;
-G2L["b2"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
-G2L["b2"]["BorderSizePixel"] = 0;
-G2L["b2"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b2"]["Name"] = [[Accessories]];
-G2L["b2"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["b2"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b2"]["ScrollBarThickness"] = 6;
-G2L["b2"]["BackgroundTransparency"] = 1;
+G2L["b8"] = Instance.new("ScrollingFrame", G2L["e"]);
+G2L["b8"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["b8"]["BorderSizePixel"] = 0;
+G2L["b8"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
+G2L["b8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b8"]["Name"] = [[Accessories]];
+G2L["b8"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["b8"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b8"]["ScrollBarThickness"] = 6;
+G2L["b8"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.katie.Frame2.Main.Frame2.Accessories.UIListLayout
-G2L["b3"] = Instance.new("UIListLayout", G2L["b2"]);
-G2L["b3"]["Wraps"] = true;
-G2L["b3"]["Padding"] = UDim.new(0.01, 0);
-G2L["b3"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-G2L["b3"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["b9"] = Instance.new("UIListLayout", G2L["b8"]);
+G2L["b9"]["Wraps"] = true;
+G2L["b9"]["Padding"] = UDim.new(0.01, 0);
+G2L["b9"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["b9"]["FillDirection"] = Enum.FillDirection.Horizontal;
 
 
--- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Gown
-G2L["b4"] = Instance.new("TextButton", G2L["b2"]);
-G2L["b4"]["Active"] = false;
-G2L["b4"]["BorderSizePixel"] = 0;
-G2L["b4"]["TextTransparency"] = 1;
-G2L["b4"]["TextSize"] = 14;
-G2L["b4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b4"]["Size"] = UDim2.new(0.49, 0, 0.8, 0);
-G2L["b4"]["LayoutOrder"] = 1;
-G2L["b4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b4"]["Text"] = [[]];
-G2L["b4"]["Name"] = [[Trail_Gown]];
-
-
--- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Gown.UICorner
-G2L["b5"] = Instance.new("UICorner", G2L["b4"]);
-G2L["b5"]["CornerRadius"] = UDim.new(0.06, 0);
-
-
--- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Gown.UIGradient
-G2L["b6"] = Instance.new("UIGradient", G2L["b4"]);
-G2L["b6"]["Rotation"] = -137;
-G2L["b6"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.5),NumberSequenceKeypoint.new(1.000, 0)};
-G2L["b6"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(229, 101, 159)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 200, 201))};
-
-
--- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Gown.ImageLabel
-G2L["b7"] = Instance.new("ImageLabel", G2L["b4"]);
-G2L["b7"]["BorderSizePixel"] = 0;
-G2L["b7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["b7"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["b7"]["Image"] = [[rbxassetid://106827508206663]];
-G2L["b7"]["Size"] = UDim2.new(0.92566, 0, 0.75506, 0);
-G2L["b7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b7"]["BackgroundTransparency"] = 0.5;
-G2L["b7"]["Position"] = UDim2.new(0.5, 0, 0.4, 0);
-
-
--- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Gown.ImageLabel.UICorner
-G2L["b8"] = Instance.new("UICorner", G2L["b7"]);
-G2L["b8"]["CornerRadius"] = UDim.new(0.06, 0);
-
-
--- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Gown.ImageLabel.UIGradient
-G2L["b9"] = Instance.new("UIGradient", G2L["b7"]);
-G2L["b9"]["Rotation"] = 90;
-G2L["b9"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(0.800, 0),NumberSequenceKeypoint.new(1.000, 0.75)};
-
-
--- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Gown.TextLabel
-G2L["ba"] = Instance.new("TextLabel", G2L["b4"]);
-G2L["ba"]["TextWrapped"] = true;
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Dress
+G2L["ba"] = Instance.new("TextButton", G2L["b8"]);
+G2L["ba"]["Active"] = false;
 G2L["ba"]["BorderSizePixel"] = 0;
+G2L["ba"]["TextTransparency"] = 1;
 G2L["ba"]["TextSize"] = 14;
-G2L["ba"]["TextScaled"] = true;
+G2L["ba"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["ba"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ba"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["ba"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ba"]["BackgroundTransparency"] = 1;
-G2L["ba"]["AnchorPoint"] = Vector2.new(0.5, 1);
-G2L["ba"]["Size"] = UDim2.new(0.9, 0, 0.225, 0);
+G2L["ba"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ba"]["Size"] = UDim2.new(0.49, 0, 0.8, 0);
+G2L["ba"]["LayoutOrder"] = 1;
 G2L["ba"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ba"]["Text"] = [[Trail_Gown]];
-G2L["ba"]["Position"] = UDim2.new(0.5, 0, 1, 0);
+G2L["ba"]["Text"] = [[]];
+G2L["ba"]["Name"] = [[Trail_Dress]];
 
 
--- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Gown.WearScript
-G2L["bb"] = Instance.new("LocalScript", G2L["b4"]);
-G2L["bb"]["Name"] = [[WearScript]];
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Dress.UICorner
+G2L["bb"] = Instance.new("UICorner", G2L["ba"]);
+G2L["bb"]["CornerRadius"] = UDim.new(0.06, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Dress.UIGradient
+G2L["bc"] = Instance.new("UIGradient", G2L["ba"]);
+G2L["bc"]["Rotation"] = -137;
+G2L["bc"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.5),NumberSequenceKeypoint.new(1.000, 0)};
+G2L["bc"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(229, 101, 159)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 200, 201))};
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Dress.ImageLabel
+G2L["bd"] = Instance.new("ImageLabel", G2L["ba"]);
+G2L["bd"]["BorderSizePixel"] = 0;
+G2L["bd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["bd"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["bd"]["Image"] = [[rbxassetid://106827508206663]];
+G2L["bd"]["Size"] = UDim2.new(0.92566, 0, 0.75506, 0);
+G2L["bd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["bd"]["BackgroundTransparency"] = 0.5;
+G2L["bd"]["Position"] = UDim2.new(0.5, 0, 0.4, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Dress.ImageLabel.UICorner
+G2L["be"] = Instance.new("UICorner", G2L["bd"]);
+G2L["be"]["CornerRadius"] = UDim.new(0.06, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Dress.ImageLabel.UIGradient
+G2L["bf"] = Instance.new("UIGradient", G2L["bd"]);
+G2L["bf"]["Rotation"] = 90;
+G2L["bf"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(0.800, 0),NumberSequenceKeypoint.new(1.000, 0.75)};
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Dress.TextLabel
+G2L["c0"] = Instance.new("TextLabel", G2L["ba"]);
+G2L["c0"]["TextWrapped"] = true;
+G2L["c0"]["BorderSizePixel"] = 0;
+G2L["c0"]["TextSize"] = 14;
+G2L["c0"]["TextScaled"] = true;
+G2L["c0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c0"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c0"]["BackgroundTransparency"] = 1;
+G2L["c0"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["c0"]["Size"] = UDim2.new(0.9, 0, 0.225, 0);
+G2L["c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c0"]["Text"] = [[Trail_Gown]];
+G2L["c0"]["Position"] = UDim2.new(0.5, 0, 1, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Dress.WearScript
+G2L["c1"] = Instance.new("LocalScript", G2L["ba"]);
+G2L["c1"]["Name"] = [[WearScript]];
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_DressVeil
+G2L["c2"] = Instance.new("TextButton", G2L["b8"]);
+G2L["c2"]["Active"] = false;
+G2L["c2"]["BorderSizePixel"] = 0;
+G2L["c2"]["TextTransparency"] = 1;
+G2L["c2"]["TextSize"] = 14;
+G2L["c2"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c2"]["Size"] = UDim2.new(0.49, 0, 0.8, 0);
+G2L["c2"]["LayoutOrder"] = 2;
+G2L["c2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c2"]["Text"] = [[]];
+G2L["c2"]["Name"] = [[Trail_DressVeil]];
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_DressVeil.UICorner
+G2L["c3"] = Instance.new("UICorner", G2L["c2"]);
+G2L["c3"]["CornerRadius"] = UDim.new(0.06, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_DressVeil.UIGradient
+G2L["c4"] = Instance.new("UIGradient", G2L["c2"]);
+G2L["c4"]["Rotation"] = -137;
+G2L["c4"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.5),NumberSequenceKeypoint.new(1.000, 0)};
+G2L["c4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(229, 101, 159)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 200, 201))};
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_DressVeil.ImageLabel
+G2L["c5"] = Instance.new("ImageLabel", G2L["c2"]);
+G2L["c5"]["BorderSizePixel"] = 0;
+G2L["c5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["c5"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["c5"]["Image"] = [[http://www.roblox.com/asset/?id=71266183365489]];
+G2L["c5"]["Size"] = UDim2.new(0.92566, 0, 0.75506, 0);
+G2L["c5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c5"]["BackgroundTransparency"] = 0.5;
+G2L["c5"]["Position"] = UDim2.new(0.5, 0, 0.4, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_DressVeil.ImageLabel.UICorner
+G2L["c6"] = Instance.new("UICorner", G2L["c5"]);
+G2L["c6"]["CornerRadius"] = UDim.new(0.06, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_DressVeil.ImageLabel.UIGradient
+G2L["c7"] = Instance.new("UIGradient", G2L["c5"]);
+G2L["c7"]["Rotation"] = 90;
+G2L["c7"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(0.800, 0),NumberSequenceKeypoint.new(1.000, 0.75)};
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_DressVeil.TextLabel
+G2L["c8"] = Instance.new("TextLabel", G2L["c2"]);
+G2L["c8"]["TextWrapped"] = true;
+G2L["c8"]["BorderSizePixel"] = 0;
+G2L["c8"]["TextSize"] = 14;
+G2L["c8"]["TextScaled"] = true;
+G2L["c8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c8"]["BackgroundTransparency"] = 1;
+G2L["c8"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["c8"]["Size"] = UDim2.new(0.9, 0, 0.225, 0);
+G2L["c8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c8"]["Text"] = [[Trail_DressVeil]];
+G2L["c8"]["Position"] = UDim2.new(0.5, 0, 1, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_DressVeil.WearScript
+G2L["c9"] = Instance.new("LocalScript", G2L["c2"]);
+G2L["c9"]["Name"] = [[WearScript]];
 
 
 -- StarterGui.katie.Frame2.Main.Frame1
-G2L["bc"] = Instance.new("ScrollingFrame", G2L["b"]);
-G2L["bc"]["Active"] = true;
-G2L["bc"]["BorderSizePixel"] = 0;
-G2L["bc"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["bc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bc"]["Name"] = [[Frame1]];
-G2L["bc"]["ScrollBarImageTransparency"] = 1;
-G2L["bc"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["bc"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["bc"]["Size"] = UDim2.new(0.325, 0, 0.95, 0);
-G2L["bc"]["Position"] = UDim2.new(0.179, 0, 0.5, 0);
-G2L["bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bc"]["ScrollBarThickness"] = 0;
-G2L["bc"]["BackgroundTransparency"] = 0.9;
+G2L["ca"] = Instance.new("ScrollingFrame", G2L["b"]);
+G2L["ca"]["Active"] = true;
+G2L["ca"]["BorderSizePixel"] = 0;
+G2L["ca"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
+G2L["ca"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ca"]["Name"] = [[Frame1]];
+G2L["ca"]["ScrollBarImageTransparency"] = 1;
+G2L["ca"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["ca"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["ca"]["Size"] = UDim2.new(0.325, 0, 0.95, 0);
+G2L["ca"]["Position"] = UDim2.new(0.179, 0, 0.5, 0);
+G2L["ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ca"]["ScrollBarThickness"] = 0;
+G2L["ca"]["BackgroundTransparency"] = 0.9;
 
 
 -- StarterGui.katie.Frame2.Main.Frame1.main
-G2L["bd"] = Instance.new("TextButton", G2L["bc"]);
-G2L["bd"]["TextWrapped"] = true;
-G2L["bd"]["BorderSizePixel"] = 0;
-G2L["bd"]["TextSize"] = 14;
-G2L["bd"]["TextScaled"] = true;
-G2L["bd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bd"]["BackgroundColor3"] = Color3.fromRGB(255, 185, 196);
-G2L["bd"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["bd"]["BackgroundTransparency"] = 0.7;
-G2L["bd"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["bd"]["LayoutOrder"] = 1;
-G2L["bd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bd"]["Text"] = [[main]];
-G2L["bd"]["Name"] = [[main]];
+G2L["cb"] = Instance.new("TextButton", G2L["ca"]);
+G2L["cb"]["TextWrapped"] = true;
+G2L["cb"]["BorderSizePixel"] = 0;
+G2L["cb"]["TextSize"] = 14;
+G2L["cb"]["TextScaled"] = true;
+G2L["cb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cb"]["BackgroundColor3"] = Color3.fromRGB(255, 185, 196);
+G2L["cb"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["cb"]["BackgroundTransparency"] = 0.7;
+G2L["cb"]["Size"] = UDim2.new(1, 0, 0.15, 0);
+G2L["cb"]["LayoutOrder"] = 1;
+G2L["cb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cb"]["Text"] = [[main]];
+G2L["cb"]["Name"] = [[main]];
 
 
 -- StarterGui.katie.Frame2.Main.Frame1.main.UICorner
-G2L["be"] = Instance.new("UICorner", G2L["bd"]);
-G2L["be"]["CornerRadius"] = UDim.new(0.2, 0);
+G2L["cc"] = Instance.new("UICorner", G2L["cb"]);
+G2L["cc"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
 -- StarterGui.katie.Frame2.Main.Frame1.main.UIGradient
-G2L["bf"] = Instance.new("UIGradient", G2L["bd"]);
-G2L["bf"]["Rotation"] = 103;
-G2L["bf"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.5)};
+G2L["cd"] = Instance.new("UIGradient", G2L["cb"]);
+G2L["cd"]["Rotation"] = 103;
+G2L["cd"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.5)};
 
 
 -- StarterGui.katie.Frame2.Main.Frame1.UIListLayout
-G2L["c0"] = Instance.new("UIListLayout", G2L["bc"]);
-G2L["c0"]["Padding"] = UDim.new(0.015, 0);
-G2L["c0"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["ce"] = Instance.new("UIListLayout", G2L["ca"]);
+G2L["ce"]["Padding"] = UDim.new(0.015, 0);
+G2L["ce"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.katie.Frame2.Main.Frame1.hairstyles
-G2L["c1"] = Instance.new("TextButton", G2L["bc"]);
-G2L["c1"]["TextWrapped"] = true;
-G2L["c1"]["BorderSizePixel"] = 0;
-G2L["c1"]["TextSize"] = 14;
-G2L["c1"]["TextScaled"] = true;
-G2L["c1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c1"]["BackgroundColor3"] = Color3.fromRGB(255, 185, 196);
-G2L["c1"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c1"]["BackgroundTransparency"] = 0.7;
-G2L["c1"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["c1"]["LayoutOrder"] = 2;
-G2L["c1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c1"]["Text"] = [[hairstyles]];
-G2L["c1"]["Name"] = [[hairstyles]];
+G2L["cf"] = Instance.new("TextButton", G2L["ca"]);
+G2L["cf"]["TextWrapped"] = true;
+G2L["cf"]["BorderSizePixel"] = 0;
+G2L["cf"]["TextSize"] = 14;
+G2L["cf"]["TextScaled"] = true;
+G2L["cf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cf"]["BackgroundColor3"] = Color3.fromRGB(255, 185, 196);
+G2L["cf"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["cf"]["BackgroundTransparency"] = 0.7;
+G2L["cf"]["Size"] = UDim2.new(1, 0, 0.15, 0);
+G2L["cf"]["LayoutOrder"] = 2;
+G2L["cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cf"]["Text"] = [[hairstyles]];
+G2L["cf"]["Name"] = [[hairstyles]];
 
 
 -- StarterGui.katie.Frame2.Main.Frame1.hairstyles.UICorner
-G2L["c2"] = Instance.new("UICorner", G2L["c1"]);
-G2L["c2"]["CornerRadius"] = UDim.new(0.2, 0);
+G2L["d0"] = Instance.new("UICorner", G2L["cf"]);
+G2L["d0"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
 -- StarterGui.katie.Frame2.Main.Frame1.hairstyles.UIGradient
-G2L["c3"] = Instance.new("UIGradient", G2L["c1"]);
-G2L["c3"]["Rotation"] = 103;
-G2L["c3"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.5)};
+G2L["d1"] = Instance.new("UIGradient", G2L["cf"]);
+G2L["d1"]["Rotation"] = 103;
+G2L["d1"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.5)};
 
 
 -- StarterGui.katie.Frame2.Main.Frame1.credits
-G2L["c4"] = Instance.new("TextButton", G2L["bc"]);
-G2L["c4"]["TextWrapped"] = true;
-G2L["c4"]["BorderSizePixel"] = 0;
-G2L["c4"]["TextSize"] = 14;
-G2L["c4"]["TextScaled"] = true;
-G2L["c4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c4"]["BackgroundColor3"] = Color3.fromRGB(255, 185, 196);
-G2L["c4"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c4"]["BackgroundTransparency"] = 0.7;
-G2L["c4"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["c4"]["LayoutOrder"] = 4;
-G2L["c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c4"]["Text"] = [[credits]];
-G2L["c4"]["Name"] = [[credits]];
+G2L["d2"] = Instance.new("TextButton", G2L["ca"]);
+G2L["d2"]["TextWrapped"] = true;
+G2L["d2"]["BorderSizePixel"] = 0;
+G2L["d2"]["TextSize"] = 14;
+G2L["d2"]["TextScaled"] = true;
+G2L["d2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d2"]["BackgroundColor3"] = Color3.fromRGB(255, 185, 196);
+G2L["d2"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d2"]["BackgroundTransparency"] = 0.7;
+G2L["d2"]["Size"] = UDim2.new(1, 0, 0.15, 0);
+G2L["d2"]["LayoutOrder"] = 4;
+G2L["d2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d2"]["Text"] = [[credits]];
+G2L["d2"]["Name"] = [[credits]];
 
 
 -- StarterGui.katie.Frame2.Main.Frame1.credits.UICorner
-G2L["c5"] = Instance.new("UICorner", G2L["c4"]);
-G2L["c5"]["CornerRadius"] = UDim.new(0.2, 0);
+G2L["d3"] = Instance.new("UICorner", G2L["d2"]);
+G2L["d3"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
 -- StarterGui.katie.Frame2.Main.Frame1.credits.UIGradient
-G2L["c6"] = Instance.new("UIGradient", G2L["c4"]);
-G2L["c6"]["Rotation"] = 103;
-G2L["c6"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.5)};
+G2L["d4"] = Instance.new("UIGradient", G2L["d2"]);
+G2L["d4"]["Rotation"] = 103;
+G2L["d4"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.5)};
 
 
 -- StarterGui.katie.Frame2.Main.Frame1.customaccs
-G2L["c7"] = Instance.new("TextButton", G2L["bc"]);
-G2L["c7"]["TextWrapped"] = true;
-G2L["c7"]["BorderSizePixel"] = 0;
-G2L["c7"]["TextSize"] = 14;
-G2L["c7"]["TextScaled"] = true;
-G2L["c7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c7"]["BackgroundColor3"] = Color3.fromRGB(255, 185, 196);
-G2L["c7"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c7"]["BackgroundTransparency"] = 0.7;
-G2L["c7"]["Size"] = UDim2.new(1, 0, 0.15, 0);
-G2L["c7"]["LayoutOrder"] = 3;
-G2L["c7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c7"]["Text"] = [[custom accs]];
-G2L["c7"]["Name"] = [[customaccs]];
+G2L["d5"] = Instance.new("TextButton", G2L["ca"]);
+G2L["d5"]["TextWrapped"] = true;
+G2L["d5"]["BorderSizePixel"] = 0;
+G2L["d5"]["TextSize"] = 14;
+G2L["d5"]["TextScaled"] = true;
+G2L["d5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d5"]["BackgroundColor3"] = Color3.fromRGB(255, 185, 196);
+G2L["d5"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d5"]["BackgroundTransparency"] = 0.7;
+G2L["d5"]["Size"] = UDim2.new(1, 0, 0.15, 0);
+G2L["d5"]["LayoutOrder"] = 3;
+G2L["d5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d5"]["Text"] = [[custom accs]];
+G2L["d5"]["Name"] = [[customaccs]];
 
 
 -- StarterGui.katie.Frame2.Main.Frame1.customaccs.UICorner
-G2L["c8"] = Instance.new("UICorner", G2L["c7"]);
-G2L["c8"]["CornerRadius"] = UDim.new(0.2, 0);
+G2L["d6"] = Instance.new("UICorner", G2L["d5"]);
+G2L["d6"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
 -- StarterGui.katie.Frame2.Main.Frame1.customaccs.UIGradient
-G2L["c9"] = Instance.new("UIGradient", G2L["c7"]);
-G2L["c9"]["Rotation"] = 103;
-G2L["c9"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.5)};
+G2L["d7"] = Instance.new("UIGradient", G2L["d5"]);
+G2L["d7"]["Rotation"] = 103;
+G2L["d7"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.5)};
 
 
 -- StarterGui.katie.Frame2.Main.1
-G2L["ca"] = Instance.new("ImageLabel", G2L["b"]);
-G2L["ca"]["ZIndex"] = 2;
-G2L["ca"]["BorderSizePixel"] = 0;
-G2L["ca"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d8"] = Instance.new("ImageLabel", G2L["b"]);
+G2L["d8"]["ZIndex"] = 2;
+G2L["d8"]["BorderSizePixel"] = 0;
+G2L["d8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["ca"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["ca"]["Image"] = [[rbxassetid://116941974329200]];
-G2L["ca"]["Size"] = UDim2.new(0.16018, 0, 1.2023, 0);
-G2L["ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ca"]["BackgroundTransparency"] = 1;
-G2L["ca"]["Rotation"] = -10;
-G2L["ca"]["Name"] = [[1]];
-G2L["ca"]["Position"] = UDim2.new(0.09607, 0, 0.81526, 0);
+G2L["d8"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["d8"]["Image"] = [[rbxassetid://116941974329200]];
+G2L["d8"]["Size"] = UDim2.new(0.16018, 0, 1.2023, 0);
+G2L["d8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d8"]["BackgroundTransparency"] = 1;
+G2L["d8"]["Rotation"] = -10;
+G2L["d8"]["Name"] = [[1]];
+G2L["d8"]["Position"] = UDim2.new(0.09607, 0, 0.81526, 0);
 
 
 -- StarterGui.katie.Frame2.Main.1.UIAspectRatioConstraint
-G2L["cb"] = Instance.new("UIAspectRatioConstraint", G2L["ca"]);
+G2L["d9"] = Instance.new("UIAspectRatioConstraint", G2L["d8"]);
 
 
 
 -- StarterGui.katie.Frame2.Main.1.UIScale
-G2L["cc"] = Instance.new("UIScale", G2L["ca"]);
+G2L["da"] = Instance.new("UIScale", G2L["d8"]);
 
 
 
 -- StarterGui.katie.Frame2.Main.1.LocalScript
-G2L["cd"] = Instance.new("LocalScript", G2L["ca"]);
+G2L["db"] = Instance.new("LocalScript", G2L["d8"]);
 
 
 
 -- StarterGui.katie.Frame2.Main.2
-G2L["ce"] = Instance.new("ImageLabel", G2L["b"]);
-G2L["ce"]["ZIndex"] = 5;
-G2L["ce"]["BorderSizePixel"] = 0;
-G2L["ce"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["dc"] = Instance.new("ImageLabel", G2L["b"]);
+G2L["dc"]["ZIndex"] = 5;
+G2L["dc"]["BorderSizePixel"] = 0;
+G2L["dc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["ce"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["ce"]["Image"] = [[rbxassetid://116941974329200]];
-G2L["ce"]["Size"] = UDim2.new(0.18263, 0, 1.66965, 0);
-G2L["ce"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ce"]["BackgroundTransparency"] = 1;
-G2L["ce"]["Name"] = [[2]];
-G2L["ce"]["Position"] = UDim2.new(0.17655, 0, 0.81526, 0);
+G2L["dc"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["dc"]["Image"] = [[rbxassetid://116941974329200]];
+G2L["dc"]["Size"] = UDim2.new(0.18263, 0, 1.66965, 0);
+G2L["dc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["dc"]["BackgroundTransparency"] = 1;
+G2L["dc"]["Name"] = [[2]];
+G2L["dc"]["Position"] = UDim2.new(0.17655, 0, 0.81526, 0);
 
 
 -- StarterGui.katie.Frame2.Main.2.UIAspectRatioConstraint
-G2L["cf"] = Instance.new("UIAspectRatioConstraint", G2L["ce"]);
+G2L["dd"] = Instance.new("UIAspectRatioConstraint", G2L["dc"]);
 
 
 
 -- StarterGui.katie.Frame2.Main.2.UIScale
-G2L["d0"] = Instance.new("UIScale", G2L["ce"]);
+G2L["de"] = Instance.new("UIScale", G2L["dc"]);
 
 
 
 -- StarterGui.katie.Frame2.Main.2.LocalScript
-G2L["d1"] = Instance.new("LocalScript", G2L["ce"]);
+G2L["df"] = Instance.new("LocalScript", G2L["dc"]);
 
 
 
 -- StarterGui.katie.Frame2.Main.3
-G2L["d2"] = Instance.new("ImageLabel", G2L["b"]);
-G2L["d2"]["ZIndex"] = 2;
-G2L["d2"]["BorderSizePixel"] = 0;
-G2L["d2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e0"] = Instance.new("ImageLabel", G2L["b"]);
+G2L["e0"]["ZIndex"] = 2;
+G2L["e0"]["BorderSizePixel"] = 0;
+G2L["e0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["d2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["d2"]["Image"] = [[rbxassetid://116941974329200]];
-G2L["d2"]["Size"] = UDim2.new(0.16018, 0, 1.2023, 0);
-G2L["d2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d2"]["BackgroundTransparency"] = 1;
-G2L["d2"]["Rotation"] = 10;
-G2L["d2"]["Name"] = [[3]];
-G2L["d2"]["Position"] = UDim2.new(0.25704, 0, 0.81526, 0);
+G2L["e0"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["e0"]["Image"] = [[rbxassetid://116941974329200]];
+G2L["e0"]["Size"] = UDim2.new(0.16018, 0, 1.2023, 0);
+G2L["e0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e0"]["BackgroundTransparency"] = 1;
+G2L["e0"]["Rotation"] = 10;
+G2L["e0"]["Name"] = [[3]];
+G2L["e0"]["Position"] = UDim2.new(0.25704, 0, 0.81526, 0);
 
 
 -- StarterGui.katie.Frame2.Main.3.UIAspectRatioConstraint
-G2L["d3"] = Instance.new("UIAspectRatioConstraint", G2L["d2"]);
+G2L["e1"] = Instance.new("UIAspectRatioConstraint", G2L["e0"]);
 
 
 
 -- StarterGui.katie.Frame2.Main.3.LocalScript
-G2L["d4"] = Instance.new("LocalScript", G2L["d2"]);
+G2L["e2"] = Instance.new("LocalScript", G2L["e0"]);
 
 
 
 -- StarterGui.katie.Frame2.Main.3.UIScale
-G2L["d5"] = Instance.new("UIScale", G2L["d2"]);
+G2L["e3"] = Instance.new("UIScale", G2L["e0"]);
 
 
 
 -- StarterGui.katie.Frame2.Main.Sparkles
-G2L["d6"] = Instance.new("Folder", G2L["b"]);
-G2L["d6"]["Name"] = [[Sparkles]];
+G2L["e4"] = Instance.new("Folder", G2L["b"]);
+G2L["e4"]["Name"] = [[Sparkles]];
 
 
 -- StarterGui.katie.Frame2.Main.Sparkles.Sparkle
-G2L["d7"] = Instance.new("ImageLabel", G2L["d6"]);
-G2L["d7"]["ZIndex"] = 99;
-G2L["d7"]["BorderSizePixel"] = 0;
-G2L["d7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e5"] = Instance.new("ImageLabel", G2L["e4"]);
+G2L["e5"]["ZIndex"] = 99;
+G2L["e5"]["BorderSizePixel"] = 0;
+G2L["e5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["d7"]["Image"] = [[rbxassetid://83547932062259]];
-G2L["d7"]["Size"] = UDim2.new(0.12203, 0, 1.05948, 0);
-G2L["d7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d7"]["BackgroundTransparency"] = 1;
-G2L["d7"]["Rotation"] = 10;
-G2L["d7"]["Name"] = [[Sparkle]];
-G2L["d7"]["Position"] = UDim2.new(-0.03895, 0, 0.85161, 0);
+G2L["e5"]["Image"] = [[rbxassetid://83547932062259]];
+G2L["e5"]["Size"] = UDim2.new(0.12203, 0, 1.05948, 0);
+G2L["e5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e5"]["BackgroundTransparency"] = 1;
+G2L["e5"]["Rotation"] = 10;
+G2L["e5"]["Name"] = [[Sparkle]];
+G2L["e5"]["Position"] = UDim2.new(-0.03895, 0, 0.85161, 0);
 
 
 -- StarterGui.katie.Frame2.Main.Sparkles.Sparkle.UIAspectRatioConstraint
-G2L["d8"] = Instance.new("UIAspectRatioConstraint", G2L["d7"]);
-
-
-
--- StarterGui.katie.Frame2.Main.Sparkles.Sparkle
-G2L["d9"] = Instance.new("ImageLabel", G2L["d6"]);
-G2L["d9"]["ZIndex"] = 99;
-G2L["d9"]["BorderSizePixel"] = 0;
-G2L["d9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["d9"]["Image"] = [[rbxassetid://83547932062259]];
-G2L["d9"]["Size"] = UDim2.new(0.09431, 0, 0.83065, 0);
-G2L["d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d9"]["BackgroundTransparency"] = 1;
-G2L["d9"]["Rotation"] = -15;
-G2L["d9"]["Name"] = [[Sparkle]];
-G2L["d9"]["Position"] = UDim2.new(-0.05452, 0, 0.78411, 0);
-
-
--- StarterGui.katie.Frame2.Main.Sparkles.Sparkle.UIAspectRatioConstraint
-G2L["da"] = Instance.new("UIAspectRatioConstraint", G2L["d9"]);
+G2L["e6"] = Instance.new("UIAspectRatioConstraint", G2L["e5"]);
 
 
 
 -- StarterGui.katie.Frame2.Main.Sparkles.Sparkle
-G2L["db"] = Instance.new("ImageLabel", G2L["d6"]);
-G2L["db"]["ZIndex"] = 99;
-G2L["db"]["BorderSizePixel"] = 0;
-G2L["db"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e7"] = Instance.new("ImageLabel", G2L["e4"]);
+G2L["e7"]["ZIndex"] = 99;
+G2L["e7"]["BorderSizePixel"] = 0;
+G2L["e7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["db"]["Image"] = [[rbxassetid://83547932062259]];
-G2L["db"]["Size"] = UDim2.new(0.12203, 0, 1.05948, 0);
-G2L["db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["db"]["BackgroundTransparency"] = 1;
-G2L["db"]["Rotation"] = -10;
-G2L["db"]["Name"] = [[Sparkle]];
-G2L["db"]["Position"] = UDim2.new(0.862, 0, -0.20771, 0);
+G2L["e7"]["Image"] = [[rbxassetid://83547932062259]];
+G2L["e7"]["Size"] = UDim2.new(0.09431, 0, 0.83065, 0);
+G2L["e7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e7"]["BackgroundTransparency"] = 1;
+G2L["e7"]["Rotation"] = -15;
+G2L["e7"]["Name"] = [[Sparkle]];
+G2L["e7"]["Position"] = UDim2.new(-0.05452, 0, 0.78411, 0);
 
 
 -- StarterGui.katie.Frame2.Main.Sparkles.Sparkle.UIAspectRatioConstraint
-G2L["dc"] = Instance.new("UIAspectRatioConstraint", G2L["db"]);
+G2L["e8"] = Instance.new("UIAspectRatioConstraint", G2L["e7"]);
 
 
 
 -- StarterGui.katie.Frame2.Main.Sparkles.Sparkle
-G2L["dd"] = Instance.new("ImageLabel", G2L["d6"]);
-G2L["dd"]["ZIndex"] = 99;
-G2L["dd"]["BorderSizePixel"] = 0;
-G2L["dd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e9"] = Instance.new("ImageLabel", G2L["e4"]);
+G2L["e9"]["ZIndex"] = 99;
+G2L["e9"]["BorderSizePixel"] = 0;
+G2L["e9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["dd"]["Image"] = [[rbxassetid://83547932062259]];
-G2L["dd"]["Size"] = UDim2.new(0.09431, 0, 0.83065, 0);
-G2L["dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["dd"]["BackgroundTransparency"] = 1;
-G2L["dd"]["Rotation"] = 15;
-G2L["dd"]["Name"] = [[Sparkle]];
-G2L["dd"]["Position"] = UDim2.new(0.90354, 0, -0.08308, 0);
+G2L["e9"]["Image"] = [[rbxassetid://83547932062259]];
+G2L["e9"]["Size"] = UDim2.new(0.12203, 0, 1.05948, 0);
+G2L["e9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e9"]["BackgroundTransparency"] = 1;
+G2L["e9"]["Rotation"] = -10;
+G2L["e9"]["Name"] = [[Sparkle]];
+G2L["e9"]["Position"] = UDim2.new(0.862, 0, -0.20771, 0);
 
 
 -- StarterGui.katie.Frame2.Main.Sparkles.Sparkle.UIAspectRatioConstraint
-G2L["de"] = Instance.new("UIAspectRatioConstraint", G2L["dd"]);
+G2L["ea"] = Instance.new("UIAspectRatioConstraint", G2L["e9"]);
+
+
+
+-- StarterGui.katie.Frame2.Main.Sparkles.Sparkle
+G2L["eb"] = Instance.new("ImageLabel", G2L["e4"]);
+G2L["eb"]["ZIndex"] = 99;
+G2L["eb"]["BorderSizePixel"] = 0;
+G2L["eb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["eb"]["Image"] = [[rbxassetid://83547932062259]];
+G2L["eb"]["Size"] = UDim2.new(0.09431, 0, 0.83065, 0);
+G2L["eb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["eb"]["BackgroundTransparency"] = 1;
+G2L["eb"]["Rotation"] = 15;
+G2L["eb"]["Name"] = [[Sparkle]];
+G2L["eb"]["Position"] = UDim2.new(0.90354, 0, -0.08308, 0);
+
+
+-- StarterGui.katie.Frame2.Main.Sparkles.Sparkle.UIAspectRatioConstraint
+G2L["ec"] = Instance.new("UIAspectRatioConstraint", G2L["eb"]);
 
 
 
 -- StarterGui.katie.Frame2.Sound
-G2L["df"] = Instance.new("Sound", G2L["2"]);
-G2L["df"]["RollOffMode"] = Enum.RollOffMode.InverseTapered;
+G2L["ed"] = Instance.new("Sound", G2L["2"]);
+G2L["ed"]["Volume"] = 0.25;
+G2L["ed"]["RollOffMode"] = Enum.RollOffMode.InverseTapered;
+G2L["ed"]["SoundId"] = [[rbxassetid://140594906158320]];
 
 
 -- StarterGui.katie.Frame2.GuiHandler
-G2L["e0"] = Instance.new("LocalScript", G2L["2"]);
-G2L["e0"]["Name"] = [[GuiHandler]];
+G2L["ee"] = Instance.new("LocalScript", G2L["2"]);
+G2L["ee"]["Name"] = [[GuiHandler]];
 
 
 -- StarterGui.katie.NameSetup
-G2L["e1"] = Instance.new("LocalScript", G2L["1"]);
-G2L["e1"]["Name"] = [[NameSetup]];
+G2L["ef"] = Instance.new("LocalScript", G2L["1"]);
+G2L["ef"]["Name"] = [[NameSetup]];
 
 
 -- StarterGui.katie.Frame2.Close.LocalScript
@@ -2139,9 +2293,9 @@ local script = G2L["29"];
 		-- Toggle Items
 		game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").Toggle:FireServer("Winter: - Winter Wind Hair", 4)
 		-- Adjust Items
-		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("Winter: - Winter Wind Hair", "Position", "Z", 0.22)
-		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("Winter: - Winter Wind Hair", "Position", "Y", 0.16)
-		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("Winter: - Winter Wind Hair", "Position", "X", -0.14)
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("Winter: - Winter Wind Hair", "Position", "Z", 0.217)
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("Winter: - Winter Wind Hair", "Position", "Y", 0.156)
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("Winter: - Winter Wind Hair", "Position", "X", -0.137)
 		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("Winter: - Winter Wind Hair", "Rotation", "X", 30)
 		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("Winter: - Winter Wind Hair", "Rotation", "Y", 54.73)
 		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("Winter: - Winter Wind Hair", "Rotation", "Z", -9.73)
@@ -2177,7 +2331,7 @@ end;
 task.spawn(C_31);
 -- StarterGui.katie.Frame2.Main.Frame2.Hairstyles.Pony_Flowy.WearScript
 local function C_39()
-local script = G2L["39"];
+	local script = G2L["39"];
 	script.Parent.MouseButton1Down:Connect(function()
 		-- Equip Items
 		game.ReplicatedStorage:WaitForChild("Dress Up").RemoteEvent:FireServer("Equip", "Halloween: - Hair Windblown")
@@ -2198,7 +2352,7 @@ end;
 task.spawn(C_39);
 -- StarterGui.katie.Frame2.Main.Frame2.Hairstyles.Pony_Back.WearScript
 local function C_41()
-local script = G2L["41"];
+	local script = G2L["41"];
 	script.Parent.MouseButton1Down:Connect(function()
 		-- Equip Items
 		game.ReplicatedStorage:WaitForChild("Dress Up").RemoteEvent:FireServer("Equip", "Winter: - Winter Wind Hair")
@@ -2224,7 +2378,7 @@ end;
 task.spawn(C_41);
 -- StarterGui.katie.Frame2.Main.Frame2.Hairstyles.Pony_Left.WearScript
 local function C_49()
-local script = G2L["49"];
+	local script = G2L["49"];
 	script.Parent.MouseButton1Down:Connect(function()
 		-- Equip Items
 		game.ReplicatedStorage:WaitForChild("Dress Up").RemoteEvent:FireServer("Equip", "Winter: - Winter Wind Hair")
@@ -2418,13 +2572,13 @@ local function C_79()
 		-- Toggle Items
 		game.ReplicatedStorage:WaitForChild("Dress Up").Toggle:FireServer("Halloween: - Hair Aurora Rework", 2)
 		-- Adjust Items
-		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("- Hair 7", "Position", "X", -1.31)
-		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("- Hair 7", "Position", "Y", -4.09)
-		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("- Hair 7", "Position", "Z", 5.72)
-		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("- Hair 7", "Rotation", "X", -1.31)
-		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("- Hair 7", "Rotation", "Y", -4.09)
-		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("- Hair 7", "Rotation", "Z", 5.72)
-		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("- Hair 7", "Scale", "Scale", 0.9)
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("- Hair 7", "Position", "X", 0.171)
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("- Hair 7", "Position", "Y", 0.063)
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("- Hair 7", "Position", "Z", -0.045)
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("- Hair 7", "Rotation", "X", 5.174)
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("- Hair 7", "Rotation", "Y", 23.055)
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("- Hair 7", "Rotation", "Z", -10.211)
+		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("- Hair 7", "Scale", "Scale", 0.754)
 		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("Winter: - Hair Side-Swept Waves", "Position", "X", -0.03)
 		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("Winter: - Hair Side-Swept Waves", "Position", "Y", -0.06)
 		game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer("Winter: - Hair Side-Swept Waves", "Position", "Z", -0.075)
@@ -2525,27 +2679,16 @@ local function C_89()
 end;
 task.spawn(C_89);
 -- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart.LocalScript
-local function C_94()
-	local script = G2L["94"];
-	script.Parent.MouseEnter:Connect(function()
-		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.4, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
-	end)
-
-	script.Parent.MouseLeave:Connect(function()
-		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.4, Enum.EasingStyle.Back), {Scale = 1}):Play()
-	end)
-
-end;
-task.spawn(C_94);
--- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart.LocalScript
 local function C_98()
 	local script = G2L["98"];
 	script.Parent.MouseEnter:Connect(function()
-		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.4, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
+		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(1, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
+		game.TweenService:Create(script.Parent, TweenInfo.new(0.5, Enum.EasingStyle.Sine), {ImageColor3 = Color3.new(1,1,1)}):Play()
 	end)
 
 	script.Parent.MouseLeave:Connect(function()
-		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.4, Enum.EasingStyle.Back), {Scale = 1}):Play()
+		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Back), {Scale = 1}):Play()
+		game.TweenService:Create(script.Parent, TweenInfo.new(0.3, Enum.EasingStyle.Sine), {ImageColor3 = Color3.new(1, 0.737255, 0.760784)}):Play()
 	end)
 
 end;
@@ -2554,11 +2697,13 @@ task.spawn(C_98);
 local function C_9c()
 	local script = G2L["9c"];
 	script.Parent.MouseEnter:Connect(function()
-		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.4, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
+		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(1, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
+		game.TweenService:Create(script.Parent, TweenInfo.new(0.5, Enum.EasingStyle.Sine), {ImageColor3 = Color3.new(1,1,1)}):Play()
 	end)
 
 	script.Parent.MouseLeave:Connect(function()
-		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.4, Enum.EasingStyle.Back), {Scale = 1}):Play()
+		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Back), {Scale = 1}):Play()
+		game.TweenService:Create(script.Parent, TweenInfo.new(0.3, Enum.EasingStyle.Sine), {ImageColor3 = Color3.new(1, 0.737255, 0.760784)}):Play()
 	end)
 
 end;
@@ -2567,11 +2712,13 @@ task.spawn(C_9c);
 local function C_a0()
 	local script = G2L["a0"];
 	script.Parent.MouseEnter:Connect(function()
-		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.4, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
+		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(1, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
+		game.TweenService:Create(script.Parent, TweenInfo.new(0.5, Enum.EasingStyle.Sine), {ImageColor3 = Color3.new(1,1,1)}):Play()
 	end)
 
 	script.Parent.MouseLeave:Connect(function()
-		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.4, Enum.EasingStyle.Back), {Scale = 1}):Play()
+		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Back), {Scale = 1}):Play()
+		game.TweenService:Create(script.Parent, TweenInfo.new(0.3, Enum.EasingStyle.Sine), {ImageColor3 = Color3.new(1, 0.737255, 0.760784)}):Play()
 	end)
 
 end;
@@ -2580,11 +2727,13 @@ task.spawn(C_a0);
 local function C_a4()
 	local script = G2L["a4"];
 	script.Parent.MouseEnter:Connect(function()
-		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.4, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
+		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(1, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
+		game.TweenService:Create(script.Parent, TweenInfo.new(0.5, Enum.EasingStyle.Sine), {ImageColor3 = Color3.new(1,1,1)}):Play()
 	end)
 
 	script.Parent.MouseLeave:Connect(function()
-		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.4, Enum.EasingStyle.Back), {Scale = 1}):Play()
+		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Back), {Scale = 1}):Play()
+		game.TweenService:Create(script.Parent, TweenInfo.new(0.3, Enum.EasingStyle.Sine), {ImageColor3 = Color3.new(1, 0.737255, 0.760784)}):Play()
 	end)
 
 end;
@@ -2593,18 +2742,35 @@ task.spawn(C_a4);
 local function C_a8()
 	local script = G2L["a8"];
 	script.Parent.MouseEnter:Connect(function()
-		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.4, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
+		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(1, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
+		game.TweenService:Create(script.Parent, TweenInfo.new(0.5, Enum.EasingStyle.Sine), {ImageColor3 = Color3.new(1,1,1)}):Play()
 	end)
 
 	script.Parent.MouseLeave:Connect(function()
-		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.4, Enum.EasingStyle.Back), {Scale = 1}):Play()
+		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Back), {Scale = 1}):Play()
+		game.TweenService:Create(script.Parent, TweenInfo.new(0.3, Enum.EasingStyle.Sine), {ImageColor3 = Color3.new(1, 0.737255, 0.760784)}):Play()
 	end)
 
 end;
 task.spawn(C_a8);
--- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Gown.WearScript
-local function C_bb()
-	local script = G2L["bb"];
+-- StarterGui.katie.Frame2.Main.Frame2.Main.Hearts.Heart.LocalScript
+local function C_ac()
+	local script = G2L["ac"];
+	script.Parent.MouseEnter:Connect(function()
+		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(1, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
+		game.TweenService:Create(script.Parent, TweenInfo.new(0.5, Enum.EasingStyle.Sine), {ImageColor3 = Color3.new(1,1,1)}):Play()
+	end)
+
+	script.Parent.MouseLeave:Connect(function()
+		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Back), {Scale = 1}):Play()
+		game.TweenService:Create(script.Parent, TweenInfo.new(0.3, Enum.EasingStyle.Sine), {ImageColor3 = Color3.new(1, 0.737255, 0.760784)}):Play()
+	end)
+
+end;
+task.spawn(C_ac);
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_Dress.WearScript
+local function C_c1()
+	local script = G2L["c1"];
 	script.Parent.MouseButton1Down:Connect(function()
 		local args = {
 			[1] = "Equip",
@@ -2730,10 +2896,129 @@ local function C_bb()
 		game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").Toggle:FireServer(unpack(args12))
 	end)
 end;
-task.spawn(C_bb);
+task.spawn(C_c1);
+-- StarterGui.katie.Frame2.Main.Frame2.Accessories.Trail_DressVeil.WearScript
+local function C_c9()
+	local script = G2L["c9"];
+	local args5 = {
+		[1] = "Winter: - Winter Wind Hair",
+		[2] = "Position",
+		[3] = "Y",
+		[4] = -3.3,
+		[5] = 1
+	}
+
+	local args55 = {
+		[1] = "Winter: - Winter Wind Hair",
+		[2] = "Position",
+		[3] = "Z",
+		[4] = 0.1,
+		[5] = 1
+	}
+
+	local args555 = {
+		[1] = "Winter: - Winter Wind Hair",
+		[2] = "Scale",
+		[3] = "Scale",
+		[4] = 2.5,
+		[5] = 1
+	}
+
+	local args2 = {
+		[1] = "Bridal Veil",
+		[2] = "Position",
+		[3] = "Y",
+		[4] = -1.25,
+		[5] = 1
+	}
+
+	local args199 = {
+		[1] = "Bridal Veil",
+		[2] = "Position",
+		[3] = "Z",
+		[4] = -1.1,
+	}
+
+	local args22 = {
+		[1] = "Bridal Veil",
+		[2] = "Scale",
+		[3] = "Scale",
+		[4] = 1,
+		[5] = 1
+	}
+
+	local args222 = {
+		[1] = "Bridal Veil",
+		[2] = "Rotation",
+		[3] = "X",
+		[4] = -25,
+		[5] = 1
+	}
+
+	local args6 = {
+		[1] = "Equip",
+		[2] = "Winter: Petal Dress (3 hour code)"
+	}
+
+	local args66 = {
+		[1] = "Color Accessory",
+		[2] = "Winter: Petal Dress (3 hour code)",
+		[3] = "2",
+		[4] = Color3.fromRGB(159, 159, 159)
+	}
+
+	local args666 = {
+		[1] = "Color Accessory",
+		[2] = "Winter: Petal Dress (3 hour code)",
+		[3] = "3",
+		[4] = Color3.fromRGB(255, 255, 255)
+	}
+
+	local args9 = {
+		[1] = "Color Accessory",
+		[2] = "Winter: Petal Dress (3 hour code)",
+		[3] = "1",
+		[4] = Color3.fromRGB(190, 190, 190)
+	}
+
+	local args99 = {
+		[1] = "Winter: Petal Dress (3 hour code)",
+		[2] = 2,
+		[3] = {
+			["Particles"] = "Off",
+			["Silver_Top"] = "Off"
+		},
+		[6] = {}
+	}
+
+	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Lana Rae's Shorts")
+	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Lana Rae's Shorts", "1", Color3.new(1.000, 1.000, 1.000))
+	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer("Lana Rae's Shorts", 1)
+	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Winter: Petal Dress (3 hour code)")
+	game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args6))
+	game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args66))
+	game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args666))
+	game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").RemoteEvent:FireServer(unpack(args9))
+	game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").Toggle:FireServer(unpack(args99))
+	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Winter: - Winter Wind Hair")
+	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Winter: - Winter Wind Hair", "1", Color3.new(1.000, 1.000, 1.000))
+	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Winter: - Winter Wind Hair", "2", Color3.new(1.000, 1.000, 1.000))
+	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer("Winter: - Winter Wind Hair", 4)
+	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Bridal Veil")
+	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Bridal Veil", "1", Color3.new(0.745, 0.745, 0.745))
+	game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Bridal Veil", "2", Color3.new(0.824, 0.824, 0.824))
+	game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args5))
+	game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args55))
+	game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args555))
+	game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args2))
+	game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args22))
+	game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args222))
+	game:GetService("ReplicatedStorage").RemoteEvents.AdjustAccessory:FireServer(unpack(args199))
+end;
+task.spawn(C_c9);
 -- StarterGui.katie.Frame2.Main.1.LocalScript
-local function C_cd()
-	local script = G2L["cd"];
+local function C_db()
+	local script = G2L["db"];
 	script.Parent.MouseEnter:Connect(function()
 		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.3, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
 		game.TweenService:Create(script.Parent, TweenInfo.new(0.3, Enum.EasingStyle.Back), {Rotation = -15}):Play()
@@ -2745,10 +3030,10 @@ local function C_cd()
 	end)
 
 end;
-task.spawn(C_cd);
+task.spawn(C_db);
 -- StarterGui.katie.Frame2.Main.2.LocalScript
-local function C_d1()
-	local script = G2L["d1"];
+local function C_df()
+	local script = G2L["df"];
 	script.Parent.MouseEnter:Connect(function()
 		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.3, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
 	end)
@@ -2758,10 +3043,10 @@ local function C_d1()
 	end)
 
 end;
-task.spawn(C_d1);
+task.spawn(C_df);
 -- StarterGui.katie.Frame2.Main.3.LocalScript
-local function C_d4()
-	local script = G2L["d4"];
+local function C_e2()
+	local script = G2L["e2"];
 	script.Parent.MouseEnter:Connect(function()
 		game.TweenService:Create(script.Parent.UIScale, TweenInfo.new(0.3, Enum.EasingStyle.Back), {Scale = 1.25}):Play()
 		game.TweenService:Create(script.Parent, TweenInfo.new(0.3, Enum.EasingStyle.Back), {Rotation = 15}):Play()
@@ -2773,21 +3058,16 @@ local function C_d4()
 	end)
 
 end;
-task.spawn(C_d4);
+task.spawn(C_e2);
 -- StarterGui.katie.Frame2.GuiHandler
-local function C_e0()
-	local script = G2L["e0"];
-	if game.ReplicatedStorage["Fashion Show"].Settings.Fade then
-		if game:GetService("ReplicatedStorage")["Fashion Show"].Settings.Fade.Value ~= "loading..." then
-			game:GetService("ReplicatedStorage")["Fashion Show"].Settings.Fade.Value = "loading..."
-		else
-			game:GetService("ReplicatedStorage")["Fashion Show"].Settings.Fade.Value = "Ioading..."
-		end
-	else
-		warn("Game is not Dress to Impress.")
+local function C_ee()
+	local script = G2L["ee"];
+	local function scale(thing)
+		script.Parent.Size = UDim2.fromScale(0.4, 0.4)
+		game.TweenService:Create(thing, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Size = UDim2.fromScale(0.334, 0.334)}):Play()
 	end
 
-	task.wait(0.5)
+	scale(script.Parent)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
@@ -2795,6 +3075,14 @@ local function C_e0()
 	local main = script.Parent.Main
 	local f1 = main.Frame1
 	local f2 = main.Frame2
+
+	for i,v in pairs(script.Parent:GetDescendants()) do
+		if v:IsA("GuiButton") then
+			v.MouseButton1Click:Connect(function()
+				script.Parent.Sound:Play()
+			end)
+		end
+	end
 
 	local active
 
@@ -2830,10 +3118,10 @@ local function C_e0()
 
 
 end;
-task.spawn(C_e0);
+task.spawn(C_ee);
 -- StarterGui.katie.NameSetup
-local function C_e1()
-	local script = G2L["e1"];
+local function C_ef()
+	local script = G2L["ef"];
 	local names = {
 		"stefani", "katie", "kaycee", "kirsten", "kirstee", "kassie", "kassy",
 		"caitlin", "jade", "jane", "arizona", "charli", "katherine", "kaitlyn",
@@ -2853,7 +3141,9 @@ local function C_e1()
 
 	script.Parent.Name = namePicked
 	script.Parent.Frame2.TextLabel.Text = namePicked.."s gui"
+
+	script.Parent:WaitForChild("Frame2"):WaitForChild("Main"):WaitForChild("Frame2"):WaitForChild("Main"):WaitForChild("Welcome").Text = "hello, "..game.Players.LocalPlayer.DisplayName.."!"
 end;
-task.spawn(C_e1);
+task.spawn(C_ef);
 
 return G2L["1"], require;
